@@ -250,8 +250,9 @@ void bar_refresh(struct bar *bar)
     }
 
     // BAR CENTER
-    struct window *window = window_manager_focused_window(&g_window_manager);
-    char *title = window ? window_title(window) : NULL;
+    // struct window *window = window_manager_focused_window(&g_window_manager);
+    // char *title = window ? window_title(window) : NULL;
+    char *title = NULL;
     if (title) {
         int overlap_left = 0;
         int overlap_right = 0;
